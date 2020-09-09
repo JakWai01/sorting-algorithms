@@ -1,4 +1,4 @@
-# Sorting Algorithms :thought_balloon:
+# Sorting Algorithms 💭
 
 This repository contains the most common sorting algorithms.
 
