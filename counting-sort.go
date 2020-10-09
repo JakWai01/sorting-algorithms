@@ -1,43 +1,43 @@
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-func main() {
+// func main() {
 
-	arr := [12]int{5,3,2,22,1,5,3,2,1,55,123,2}
+// 	arr := [12]int{5,3,2,22,1,5,3,2,1,55,123,2}
 
-	// counting sort 
-	max := 0
+// 	// counting sort 
+// 	max := 0
 	
-	for i := 0; i < len(arr); i++ {
-		if arr[i] > max {
-			max = arr[i]
-		}
-	}
+// 	for i := 0; i < len(arr); i++ {
+// 		if arr[i] > max {
+// 			max = arr[i]
+// 		}
+// 	}
 
-	countingLib := make([]int, max+1)
-	fmt.Println(countingLib)
+// 	countingLib := make([]int, max+1)
+// 	fmt.Println(countingLib)
 	
-	for i := 0; i < len(arr); i++ {
-		countingLib[arr[i]]++ 
-	}
+// 	for i := 0; i < len(arr); i++ {
+// 		countingLib[arr[i]]++ 
+// 	}
 
-	fmt.Println(countingLib)
+// 	fmt.Println(countingLib)
 
-	arrNew := [len(arr)]int{}
+// 	arrNew := [len(arr)]int{}
 
-	count := 0
+// 	count := 0
 
-	for i := 0; i < len(countingLib); i++ {
+// 	for i := 0; i < len(countingLib); i++ {
 		
-		if countingLib[i] != 0 {
-			arrNew[count] = i
-			countingLib[i]--
-			count++
-			i--
-		}
-	}
+// 		if countingLib[i] != 0 {
+// 			arrNew[count] = i
+// 			countingLib[i]--
+// 			count++
+// 			i--
+// 		}
+// 	}
 
-	arr = arrNew
-	fmt.Println(arr)
-}
+// 	arr = arrNew
+// 	fmt.Println(arr)
+// }
